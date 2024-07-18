@@ -56,3 +56,4 @@ console.log(pi);
     const var4=70
     //var4="Alok kumar swain" // This will cause an error as const variables are immutable.
     console.log(var4)
+    //thank you

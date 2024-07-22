@@ -42,3 +42,37 @@ do{
 
 // . Task 6: Write a program to calculate the factorial of a number using a do ... while loop.
 
+let num3=1
+let fact =1
+do{
+    fact *= num3
+    num3++
+}while(num3<=5)
+console.log("Factorial of 10: "+fact)
+// Activity 4: Nested Loops
+
+// . Task 7: Write a program to print a pattern using nested for loops:
+let pattern=" "
+for(i=1;i<=5;i++){
+    for(j=1;j<=i;j++){
+        pattern+="*";
+    }
+    console.log(pattern);
+    pattern=" "
+}
+// Activity 5: Loop Control Statements
+
+// . Task 8: Write a program to print numbers from 1 to 10, but skip the number 5 using the continue statement.
+let number1=10
+for(let i=1;i<=number1;i++){
+    if(i==5) continue;
+    console.log(i)
+}
+// . Task 9: Write a program to print numbers from 1 to 10, but stop the loop when the number is 7 using the break statement.
+
+let number2=10
+for(let i=1;i<=number2;i++){
+    if(i==7) break;
+    console.log(i)
+}
+//thanks

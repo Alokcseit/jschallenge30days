@@ -109,3 +109,39 @@ function check_promise() {
     });
 }
 check_promise();
+
+//• Task 7: Use try-catch within an async function to handle errors from a promise that randomly resolves or rejects, and log the error message.
+async function check_promise(){
+  try {
+    const mpromise= await myPromise;
+    console.log(mpromise )
+    
+  } catch (error) {
+    console.log(error)
+  }
+}
+check_promise()
+
+
+//Activity 5: Graceful Error Handling in Fetch
+//• Task 8: Use the fetch API to request data from an invalid URL and handle the error using -catch () . Log an appropriate error message to the console.
+const url="https://jsonplaceholder."
+function fetchdata(){
+    fetch(url)
+    .then((response)=>response.json())
+    .then((data)=>console.log(data))
+    .catch((error)=>console.log(error))
+    
+}
+//• Task 9: Use the fetch API to request data from an invalid URL within an async function and handle the error using try-catch. Log an appropriate error message.
+const handasync=async()=>{
+  try {
+     const response=await fetch(url)
+     if(!response.ok) throw new Error("response not ok")
+     const data=await response.json()
+     console.log(data)
+  } catch (error) {
+    console.log(error)
+  }
+}
+handasync()

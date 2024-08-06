@@ -11,3 +11,9 @@
  }
  let person1=new Person("Alok",21)
  console.log(person1.greeting())
+ // • Task 2: Add a method to the Person class that updates the age property and logs the updated age.
+ person1.updateage=function(age){
+     this.age=age
+     console.log(this.age)
+ }
+ console.log(person1.updateage(22))

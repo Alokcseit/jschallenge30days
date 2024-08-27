@@ -17,3 +17,5 @@
      console.log(this.age)
  }
  console.log(person1.updateage(22))
+ console.log(person1.upgradeage(23))
+ // 
